@@ -20,9 +20,9 @@ public class BestLoanRates {
         int loanTermsInYears = scanner.nextInt();
         float bestRate = getRates(loanTermsInYears);
         if(bestRate == 0.0f) {
-            System.out.println("no available rates for term "+ loanTermsInYears + " years");
+            System.out.println("no available rates for term " + loanTermsInYears + " years");
         } else {
-            System.out.println("Best Available Rate"+ getRates(loanTermsInYears) + "3.45%");
+            System.out.println("Best Available Rate " + getRates(loanTermsInYears) + "%");
         }
     }
 
