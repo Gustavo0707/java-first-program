@@ -26,7 +26,7 @@ public class Finance {
         return false;
     }
 
-    private static void excuteCommand(String command, String[] arguments) {
+    private static void executeCommand(String command, String[] arguments) {
         switch (command) {
             case BEST_LOAN_RATES:
                 System.out.println("Finding best loan rate ...");
@@ -56,6 +56,6 @@ public class Finance {
             return;
         }
 
-        excuteCommand(command, Arrays.copyOfRange(args, 1, args.length));
+        executeCommand(command, Arrays.copyOfRange(args, 1, args.length));
     }
 }
