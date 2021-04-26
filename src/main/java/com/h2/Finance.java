@@ -43,6 +43,7 @@ public class Finance {
         }
     }
     public static void main(String[] args) {
+        args = new String[]{"bestLoanRates"};
         String command = args[0];
         if(!commandsToUsage.containsKey(command)) {
             System.out.println(command + ": command not found");
