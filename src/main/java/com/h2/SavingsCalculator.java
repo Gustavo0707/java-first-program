@@ -40,7 +40,6 @@ public class SavingsCalculator {
     }
 
     public static void main(String[] args) {
-        args = new String[]{"10.0,20.0", "5.0"};
         final String[] creditsAsString = args [0].split(",");
         final String[] debitsAsString = args [1].split(",");
 
