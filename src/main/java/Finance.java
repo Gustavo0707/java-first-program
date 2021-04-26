@@ -1,4 +1,6 @@
-package com.h2;
+import com.h2.BestLoanRates;
+import com.h2.MortgageCalculator;
+import com.h2.SavingsCalculator;
 
 import java.util.Arrays;
 import java.util.Map;
@@ -23,7 +25,7 @@ public class Finance {
             case MORTGAGE_CALCULATOR:
                 return args.length == 4;
         }
-        return false;
+        return true;
     }
 
     private static void executeCommand(String command, String[] arguments) {
