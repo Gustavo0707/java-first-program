@@ -11,7 +11,11 @@ public class Finance {
     public static final String MORTGAGE_CALCULATOR = "mortgageCalculator";
 
     public static final Map<String, String> commandsToUsage = Map.of(
+<<<<<<< HEAD
             BEST_LOAN_RATES, "usage: bestLoanRate",
+=======
+            BEST_LOAN_RATES, "usage: bestLoanRates",
+>>>>>>> origin/module5-solution
             SAVINGS_CALCULATOR, "usage: savingsCalculator <credits separated by ','> <debits separated by ','>",
             MORTGAGE_CALCULATOR, "usage: mortgageCalculator <loanAmount> <termInYears> <annualRate>"
     );
@@ -25,13 +29,21 @@ public class Finance {
             case MORTGAGE_CALCULATOR:
                 return args.length == 4;
         }
+<<<<<<< HEAD
         return true;
+=======
+        return false;
+>>>>>>> origin/module5-solution
     }
 
     private static void executeCommand(String command, String[] arguments) {
         switch (command) {
             case BEST_LOAN_RATES:
+<<<<<<< HEAD
                 System.out.println("Finding best loan rate ...");
+=======
+                System.out.println("Finding best loan rates ...");
+>>>>>>> origin/module5-solution
                 BestLoanRates.main(arguments);
                 return;
             case SAVINGS_CALCULATOR:
@@ -44,8 +56,13 @@ public class Finance {
                 return;
         }
     }
+<<<<<<< HEAD
     public static void main(String[] args) {
         args = new String[]{"bestLoanRates"};
+=======
+
+    public static void main(String[] args) {
+>>>>>>> origin/module5-solution
         String command = args[0];
         if(!commandsToUsage.containsKey(command)) {
             System.out.println(command + ": command not found");
